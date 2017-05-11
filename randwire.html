@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="Generator" content="Microsoft Word 97">
+    <meta name="GENERATOR" content="Mozilla/4.5 [en] (Win98; I)
+      [Netscape]">
+    <title>Optimal Length of Random Wire Antenna</title>
+  </head>
+  <body>
+    <center>
+      <h1> <font size="+3">Optimal Length of Random Wire Antenna<br>
+        </font></h1>
+    </center>
+    <center><b><font size="+2"><a href="http://sprott.physics.wisc.edu/sprott.htm">J. C. Sprott</a></font></b>
+      <br>
+      <i><font size="+1">Department of Physics, University of Wisconsin,
+          Madison, WI 53706, USA</font></i> <br>
+      April 26, 2012<br>
+    </center>
+    <p>Much has been written about the optimal length of a random wire
+      antenna (sometimes called a long wire antenna), some of which is
+      contradictory. An antenna that will tune to an acceptable SWR
+      using a common antenna tuner throughout the amateur radio bands of
+      1.8-2, 3.5-4, 7-7.3, 10.1-10.15, 14-14.350, 18.068-18.168,
+      21-21.45, 24.89-24.99, and 28-29.7 MHz would at a minimum entail
+      using a quarter wave resonance frequency lower than the lowest
+      operating frequency and avoiding lengths that are even multiples
+      of a half wavelength on any of the higher frequencies. <br>
+    </p>
+    <p>I wrote a <a href="http://sprott.physics.wisc.edu/technote/randwire.bas">program</a> in <a href="http://www.powerbasic.com/">PowerBASIC</a> to calculate
+      the gaps in the quarter-wavelength frequency spectrum over the
+      range 0-30 MHz in 10 Hz steps where such resonances would be
+      absent and the corresponding required electrical lengths of the
+      antenna. Running the <a href="http://sprott.physics.wisc.edu/technote/randwire.exe">program</a> produced
+      the following output:<br>
+    </p>
+    Gap = 1 kHz at .874265 MHz (281 feet)<br>
+    Gap = 4 kHz at 1.07472 MHz (229 feet)<br>
+    Gap = 24 kHz at 1.15449 MHz (213 feet)<br>
+    Gap = 7 kHz at 1.241005 MHz (198 feet)<br>
+    Gap = 13 kHz at 1.256005 MHz (196 feet)<br>
+    Gap = 4 kHz at 1.27074 MHz (194 feet)<br>
+    Gap = 33 kHz at 1.366395 MHz (180 feet)<br>
+    Gap = 12 kHz at 1.39417 MHz (176 feet)<br>
+    Gap = 15 kHz at 1.492505 MHz (165 feet)<br>
+    Gap = 23 kHz at 1.543855 MHz (159 feet)<br>
+    Gap = 33 kHz at 1.666675 MHz (148 feet)<br>
+    Gap = 58 kHz at 1.720835 MHz (143 feet)<br>
+    Gap = 114 kHz at 2.20176 MHz (112 feet)<br>
+    Gap = 62 kHz at 2.30217 MHz (107 feet)<br>
+    Gap = 14 kHz at 2.482005 MHz (99 feet)<br>
+    Gap = 26 kHz at 2.512005 MHz (98 feet)<br>
+    Gap = 88 kHz at 2.58125 MHz (95 feet)<br>
+    Gap = 119 kHz at 2.74063 MHz (90 feet)<br>
+    Gap = 41 kHz at 2.990675 MHz (82 feet)<br>
+    Gap = 83 kHz at 3.069625 MHz (80 feet)<br>
+    Gap = 376 kHz at 3.311875 MHz (74 feet)<br>
+    Gap = 436 kHz at 3.930425 MHz (63 feet)<br>
+    Gap = 352 kHz at 4.341005 MHz (57 feet)<br>
+    Gap = 125 kHz at 4.604335 MHz (53 feet)<br>
+    Gap = 100 kHz at 5.00001 MHz (49 feet)<br>
+    Gap = 175 kHz at 5.1625 MHz (48 feet)<br>
+    Gap = 860 kHz at 5.792505 MHz (42 feet)<br>
+    Gap = 752 kHz at 6.62375 MHz (37 feet)<br>
+    Gap = 1609 kHz at 8.22951 MHz (30 feet)<br>
+    Gap = 1416 kHz at 9.792 MHz (25 feet)<br>
+    Gap = 1720 kHz at 11.585 MHz (21 feet)<br>
+    Gap = 1505 kHz at 13.2475 MHz (19 feet)<br>
+    <br>
+    In general, wider gaps are preferred. The shortest antenna that has
+    a chance of tuning all bands has an electrical length of 143 feet
+    and should be trimmed to give a quarter wave resonance at 1.72 MHz.
+    If one were to forgo 160 meter (1.8-2 MHz) operation, an antenna
+    with an electrical length of 74 feet should suffice and should be
+    trimmed to give a quarter wave resonance at 3.31 MHz. These values
+    assume that the antenna tuner is placed at the feed point of the
+    antenna and that a suitable ground is provided.<br>
+    <br>
+    If there is a feedline between the antenna and the tuner, it is
+    better to design the antenna to be resonant at the lowest desired
+    frequency of operation, and then choose the feedline length between
+    the antenna and the tuner to bring the total electrical length to
+    one of the above values. Suppose, for example that one wants the
+    antenna to operate at the center of the 80 meter band (3.75 MHz).
+    Then the antenna must have an electrical length of 66 feet, and
+    suitable feedlines would have electrical lengths of 8, 14, 16, 24,
+    25, 41, 46, 77, ... feet. The required physical lengths are shorter
+    as determined by the velocity factor of the feedline.<br>
+    <p> </p>
+    <hr width="100%"> <br>
+    <a href="http://sprott.physics.wisc.edu/technote.htm">Back to Sprott's Technical Notes</a> <br>
+    &nbsp;
+  
+
+</body></html>
